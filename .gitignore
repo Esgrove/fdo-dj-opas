@@ -302,3 +302,9 @@ TSWLatexianTemp*
 
 ## Other
 out/
+
+# Extra files
+*.odt
+*.pdf
+*.csv
+*.ods

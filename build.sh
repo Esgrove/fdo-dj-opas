@@ -60,7 +60,7 @@ case "$(uname -s)" in
 esac
 
 if [ "$PLATFORM" = windows ]; then
-    GHOSTSCRIPT="gswin64c.exe"
+    GHOSTSCRIPT="gswin64c"
 else
     GHOSTSCRIPT="gs"
 fi
@@ -131,6 +131,7 @@ fi
 if [ "$COMPRESS" = true ]; then
     if [ -n "$(command -v $GHOSTSCRIPT)" ]; then
         print_magenta "Compressing PDF with ghostscript..."
+        echo "$($GHOSTSCRIPT --version) from $(which "$GHOSTSCRIPT")"
         $GHOSTSCRIPT \
             -dBATCH \
             -dNOPAUSE \
