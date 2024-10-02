@@ -84,30 +84,30 @@
 % Fonts
 \usepackage{fontspec}
 
-\newfontfamily\blackfont        [Ligatures=TeX]{MyriadPro-Black}
-\newfontfamily\lightfont        [Ligatures=TeX]{MyriadPro-Light}
-\newfontfamily\semiboldfont     [Ligatures=TeX]{MyriadPro-SemiBold}
+\newfontfamily\blackfont        [Ligatures=TeX]{Roboto-Black}
+\newfontfamily\lightfont        [Ligatures=TeX]{Roboto-Light}
+\newfontfamily\semiboldfont     [Ligatures=TeX]{Roboto-Medium}
 
-\setmainfont[Ligatures=TeX,Numbers=Lining]{MyriadPro}[
+\setmainfont[Ligatures=TeX,Numbers=Lining]{Roboto}[
     BoldFont = *-Bold,
-    BoldItalicFont = *-BoldIt,
-    ItalicFont = *-It,
+    BoldItalicFont = *-BoldItalic,
+    ItalicFont = *-Italic,
     UprightFont = *-Regular,
 ]
 
 \AtBeginEnvironment{tabular}{
-    \setmainfont[Numbers=Monospaced]{MyriadPro}[
+    \setmainfont[Numbers=Monospaced]{Roboto}[
         BoldFont = *-Bold,
-        BoldItalicFont = *-BoldIt,
-        ItalicFont = *-It,
+        BoldItalicFont = *-BoldItalic,
+        ItalicFont = *-Italic,
         UprightFont = *-Regular,
     ]
 }
 \AtBeginEnvironment{tabularx}{
-    \setmainfont[Numbers=Monospaced]{MyriadPro}[
+    \setmainfont[Numbers=Monospaced]{Roboto}[
         BoldFont = *-Bold,
-        BoldItalicFont = *-BoldIt,
-        ItalicFont = *-It,
+        BoldItalicFont = *-BoldItalic,
+        ItalicFont = *-Italic,
         UprightFont = *-Regular,
     ]
 }
