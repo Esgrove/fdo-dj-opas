@@ -66,7 +66,7 @@ else
 fi
 
 # Get absolute path to repo root
-REPO_ROOT=$(git rev-parse --show-toplevel || (cd "$(dirname "${BASH_SOURCE[0]}")" && pwd))
+REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || (cd "$(dirname "${BASH_SOURCE[0]}")" && pwd))
 OUTPUT_DIR="$REPO_ROOT/out"
 
 FILENAME="FDO DJ opas"
