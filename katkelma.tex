@@ -1,0 +1,21 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{fontspec}
+\usepackage{tikz}
+
+\setmainfont{Roboto}
+\newcommand{\semiboldfont}{\fontseries{sb}\selectfont}
+
+\begin{document}
+    \centering
+    \semiboldfont
+    \begin{tikzpicture}[xscale=1.54]
+        \draw [very thick] (0,0) -- (10,0);
+        \draw [thick] (0,-.25) -- (0, .25);
+        \draw [thick] (2.5,-.25) -- (2.5, .25);
+        \draw [thick] (7.5,-.25) -- (7.5, .25);
+        \draw [thick] (10,-.25) -- (10, .25);
+        \node[align=center, below] at (1.25,-.35) {Intro:\\1-2 kasia / 5s};
+        \node[align=center, below] at (5,-.35) {Varsinainen katkelma biisiä:\\30s / 1min / 1min30s / 2min};
+        \node[align=center, below] at (8.75,-.35) {Loppuhäivytys:\\1-2 kasia / 5s};
+    \end{tikzpicture}
+\end{document}
