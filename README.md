@@ -2,6 +2,17 @@
 
 Musiikin soitto-ohjeet FDO:n kilpailuihin.
 
+## Dependencies
+
+- LuaLaTex
+- Fonts: Roboto & Roboto Mono
+- [GhostScript](https://ghostscript.com/about/index.html)
+
+```shell
+brew install ghostscript mactex pandoc
+brew install --cask font-roboto font-roboto-mono
+```
+
 ## Convert tikz to PDF
 
 ```shell
