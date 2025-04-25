@@ -6,17 +6,10 @@ USAGE="Usage: $0 [OPTIONS]
 Compile PDF and process with Ghostscript.
 
 OPTIONS: All options are optional
-    -h | --help
-        Display these instructions.
-
-    -c | --clean
-        Clean temporary files before building.
-
-    -n | --no-gs
-        Skip Ghostscript compression step.
-
-    -v | --verbose
-        Display commands being executed.
+    -h | --help       Display these instructions.
+    -c | --clean      Clean temporary files before building.
+    -n | --no-gs      Skip Ghostscript compression step.
+    -v | --verbose    Display commands being executed.
 "
 
 # Print a message with green color
@@ -66,7 +59,7 @@ else
 fi
 
 # Get absolute path to repo root
-REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || (cd "$(dirname "${BASH_SOURCE[0]}")" && pwd))
+REPO_ROOT=$(git rev-parse --show-toplevel 2> /dev/null || (cd "$(dirname "${BASH_SOURCE[0]}")" && pwd))
 OUTPUT_DIR="$REPO_ROOT/out"
 
 FILENAME="FDO DJ opas"
