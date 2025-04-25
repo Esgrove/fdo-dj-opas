@@ -27,7 +27,7 @@ Use the provided shell script:
 
 ```shell
 ./build.sh
-# use -h | --help to check options:
+# use `-h` or `--help` to check options:
 ./build.sh --help
 ```
 
