@@ -4,13 +4,31 @@ Musiikin soitto-ohjeet FDO:n kilpailuihin.
 
 ## Dependencies
 
+Required:
+
 - LuaLaTex
 - Fonts: Roboto & Roboto Mono
+
+Extra:
+
 - [GhostScript](https://ghostscript.com/about/index.html)
+- [Pandoc](https://pandoc.org)
+
+Install on macOS:
 
 ```shell
-brew install ghostscript mactex pandoc
+brew install mactex ghostscript pandoc
 brew install --cask font-roboto font-roboto-mono
+```
+
+## Compile document
+
+Use the provided shell script:
+
+```shell
+./build.sh
+# use -h | --help to check options:
+./build.sh --help
 ```
 
 ## Convert tikz to PDF
