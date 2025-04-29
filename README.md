@@ -31,7 +31,7 @@ Use the provided shell script:
 ./build.sh --help
 ```
 
-## Convert tikz to PDF
+## Convert tikz graphics to PDF
 
 ```shell
 lualatex katkelma.tex
