@@ -42,3 +42,21 @@ lualatex katkelma.tex
 ```shell
 pandoc -s "FDO DJ opas.tex" -o "FDO DJ opas.docx"
 ```
+
+## Format LaTex files
+
+Using [tex-fmt](https://github.com/WGUNDERWOOD/tex-fmt).
+
+Install:
+
+```shell
+brew install tex-fmt
+# or compile with Rust toolchain
+cargo install tex-fmt
+```
+
+Format files:
+
+```shell
+tex-fmt *.tex
+```

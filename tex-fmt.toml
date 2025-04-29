@@ -1,0 +1,10 @@
+# tex-fmt.toml
+check = false
+print = false
+wrap = false
+wraplen = 120
+tabsize = 4
+tabchar = "space"
+stdin = false
+verbosity = "info"
+lists = []
