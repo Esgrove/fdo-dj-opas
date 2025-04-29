@@ -128,8 +128,9 @@ if [ "$COMPRESS" = true ]; then
         $GHOSTSCRIPT \
             -dBATCH \
             -dNOPAUSE \
-            -dNOSAFER \
-            -dPDFA=2 \
+            -dSAFER \
+            --permit-file-read=srgb.icc \
+            -dPDFA=3 \
             -dPDFACompatibilityPolicy=1 \
             -dCompatibilityLevel=1.7 \
             -dPrinted=false \
@@ -138,7 +139,7 @@ if [ "$COMPRESS" = true ]; then
             -dEmbedAllFonts=true \
             -dPDFSETTINGS=/prepress \
             -sDEVICE=pdfwrite \
-            -sColorConversionStrategy=UseDeviceIndependentColor \
+            -sColorConversionStrategy=RGB \
             -sProcessColorModel=DeviceRGB \
             -sOutputFile="$PDF_FILE_WITH_DATE" \
             "$PDFA_DEFS_FILE" \
